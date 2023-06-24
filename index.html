@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Jr. Full Stack Developer</p>
+            <h1>Hello, I'm <span>Quen Wade, PhD</span><br>The Coding Psychologist</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Thank you for visiting my portfolio website. I am excited to share my most recent projects with you. I was born and raised in Greenville, MS. I attended high school at Brewer High School in Fort Worth, TX. I studied Psychology at Oral Roberts University in Tulsa, OK and graduated with a masters degree and doctoral degree in school psychology from Howard University in Washington, DC. I started coding in 2018 out of curiosity, developed a sincere interest in creating things programmatically, and have not looked back since. My first language was Python. I took a course on Udemy and countless YouTube tutorials, and I really enjoy learning the language. I am currently completing Free Code Camp, where I am receiving the structured training I need, and I dedicate at least one hour per day coding. I am in the process of launching my online community, Coding Psychologist. The goal of the platform is to teach my former colleagues code, while sharing my journey. I believe it's the best way to truly learn concepts. I am excited about my new journey in web development. </p>        <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End Development</span><br>Web Design</li>
+                        <li><span>Full-Stack Development</span><br>Web App/Software Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Coding Psychologist-I have worked with over 30 satisfied clients<br>mainly in the education sector. I have created psychological report software programs for psychologists in private practice, and have created educational games for school teachers.</l
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Responsive Web Design Certification-FreeCodeCamp</li>
+                        <li><span>2023</span><br>Data Analysis With Python-FreeCodeCamp</li>
+                        <li><span>2022</span><br>Professional Data Analytics Certificate-Google</li>
+                        <li><span>2012</span><br>PhD in School Psychology-Howard University, Washington, DC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>If you are a small business owner, professional services provider, or home services provider, I will build an appealing, mobile-friendly website for your company.</p>              <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Web App/Software Development</h2>
+                <p>I will help bring your idea or vision to life using the latest technologies. Let's work together to change the lives of everyday people with smart solutions. </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Duplicate Data Slayer</h3>
+                    <p>This Python application allows data analysts to seamlessly remove duplicate rows from small to large datasets.</p>
+                    <a href="https://github.com/codingpsychologist/Data-Duplicate-Slayer"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Psych Report Assistant</h3>
+                    <p>By extracting data from a csv file using the pandas library, this tool allows psychologists to generate multiple psych reports with a single click.</p>
+                    <a href="https://github.com/codingpsychologist/Psych-Report-Assistant"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Who Wants To Be A Sight Word Millionaire?</h3>
+                    <p>This Python game seeks to help emerging readers improve their sight word fluency by presenting them with incomplete sentences, in which they have to fill the blank.</p>
+                    <a href="https://github.com/codingpsychologist/Who-Wants-To-Be-A-Sight-Word-Millionaire"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> quendwade@example.com</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/CodingPsych79"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/coding-psychologist-7a737827b/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/channel/UCG1yFJ-bdSV-Z2d9vV4Jn-Q"><i class="fas fa-play"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Quen Wade, PhD. Made wtih <i class="fas fa-heart"></i> by <a href=https://www.youtube.com/channel/UCG1yFJ-bdSV-Z2d9vV4Jn-Q>Coding Psychologist</a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
